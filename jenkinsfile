@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test using marker') {
             steps {
-                bat 'pytest -m 'tc_1''
+                bat 'pytest -m "tc_1"'
             }
         }
     }
