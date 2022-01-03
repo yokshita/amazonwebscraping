@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('test using marker') {
+        stage('amezontestcases.py') {
             steps {
                 bat 'pytest -m "tc_1"'
+                bat 'pytest -m "tc_2"'
             }
         }
     }
