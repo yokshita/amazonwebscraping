@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage('test_amezontestcases.py') {
             steps {
-                bat 'pytest -m "tc_1"'
-                bat 'pytest -m "tc_2"'
+                bat 'pytest -m "smoke"'
+                bat 'pytest -m "sanity"'
+                bat 'pytest -m "regression"'
             }
         }
     }
