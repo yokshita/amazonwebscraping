@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test using marker') {
             steps {
-                bat 'pytest test_amazontestcases.py'
+                bat 'pytest test_amezontestcases.py'
             }
         }
     }
