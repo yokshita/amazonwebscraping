@@ -19,5 +19,5 @@ def test_cases4(setup_fricture):
     #by searching girls fashion and selecting Girls fashion and jumpsuits 4th testcase
     driver.find_element_by_name('field-keywords').send_keys('girls fashion')
     driver.find_element_by_id('nav-search-submit-button').click()
-    driver.find_element(By.XPATH, '//*[@id="n/15966953031"]/div/span').click()
+    driver.find_element(By.XPATH, '//*[@id="n/15966953031"]/div/span')
     time.sleep(5)
